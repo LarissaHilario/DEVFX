@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
+import BodyBg from '../../assets/background/bg1.jpg';
 
 export default function RegistrationForm() {
   const [username, setUsername] = useState('');
@@ -20,8 +21,15 @@ export default function RegistrationForm() {
     console.log('Iniciar sesión con Google');
   };
 
+  const backgroundStyle = {
+    backgroundImage: `url(${BodyBg})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: '100vh', // Ajusta la altura al 100% de la ventana
+  };
+
   return (
-    <div className="bg-white min-h-screen flex items-center justify-center">
+    <div className="min-h-screen flex items-center justify-center" style={backgroundStyle}>
       <div className="w-2/4 p-8 bg-[#171717] rounded-md shadow-md">
         <h2 className="text-3xl font-semibold mb-4 text-white text-center">Create Account</h2>
         {/* Formulario de registro */}
@@ -85,7 +93,7 @@ export default function RegistrationForm() {
           <button
             type="button"
             onClick={handleRegistration}
-            className="bg-[#09724A] text-white px-4 mt-28 py-2 rounded-md w-4/12 flex items-center justify-center hover:bg-green-700 transition duration-150 ease-in"
+            className="bg-[#09724A] text-white px-4 mt-4 py-2 rounded-md w-4/12 flex items-center justify-center hover:bg-green-700 transition duration-150 ease-in"
           >
             Sign up
           </button>
@@ -105,7 +113,7 @@ export default function RegistrationForm() {
             <FcGoogle size={20} className="mr-2" />
             Continue with Google
           </button>
-          <a className='mt-6 mx-2 text-white'>Already have an account?</a>
+          <a className="mt-6 mx-2 text-white">Already have an account?</a>
         </form>
       </div>
     </div>

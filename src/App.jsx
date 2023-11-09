@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import Home from './pages/Home'
+
 import './App.css'
+import Register from './pages/Register'
 
 function App() {
 
   return (
     <>
-      <Home/>
+      <Register/>
     </>
   )
 }

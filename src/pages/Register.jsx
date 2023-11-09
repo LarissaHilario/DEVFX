@@ -1,9 +1,9 @@
 import React from 'react'
-import Header from '../components/header'
-import Body from '../components/Body'
+import Header from '../components/RegisterPage/Header'
+import Body from '../components/RegisterPage/Body'
 import Footer from '../components/shared/Footer'
 
-function Home() {
+export default function Register() {
   return (
     <div>
         <Header/>
@@ -12,5 +12,3 @@ function Home() {
     </div>
   )
 }
-
-export default Home

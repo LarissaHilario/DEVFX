@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/icon/quetz.png';
+import { icon } from '../../assets/icon/index';
 
 export default function Header() {
   return (
@@ -7,7 +7,7 @@ export default function Header() {
       {/* Espacio para el logo con una imagen */}
       <div className="flex items-center">
         <img
-          src={logo}
+          src={icon.logo}
           alt="Logo de la página"
           className="w-12 h-12 mr-2 rounded-sm"
         />
