@@ -1,5 +1,6 @@
 import React from "react";
 import TopNfts from "../components/TopNfts";
+import CardArtist from "../components/CardArtist";
 
 const LandingPage = () => {
     return (
@@ -12,10 +13,8 @@ const LandingPage = () => {
                     <div className="absolute z-10 h-full w-full ">
                         <div className="h-full w-full relative">
                             <div className="absolute z-10 h-full w-full bg-backLanding bg-cover  bg-no-repeat">
-                               
-                            </div>
-                           
                         </div>
+                    </div>
                     </div>
                     {/* logica */}
                     <div className="absolute z-50 h-full w-full ">
@@ -33,6 +32,7 @@ const LandingPage = () => {
                     
                 </div>
                <TopNfts/>
+               <CardArtist/>
           
     </div>
 );

@@ -4,7 +4,7 @@ import { images } from "../assets/INDEX.JS";
 const CardImage = () => {
     return (
         <>
-            <div className="w-full h-full">
+            <div className="w-full h-full p-4">
                 <div className="">
                     <div className="w-[232px] h-[321px] grid-rows-2">
                         <div className="h-[calc(100%-97px)] w-[232px] grid grid-cols-2 ">
