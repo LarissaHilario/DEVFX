@@ -10,7 +10,7 @@ const CardImage = () => {
                         <div className="h-[calc(100%-97px)] w-[232px] grid grid-cols-2 ">
                             
                                 <div className="h-full w-[175px] ">
-                                    <img src={images.jaguar} className="h-full w-[175px] object-cover object-contain "></img>
+                                    <img src={images.jaguar} className="h-full w-[175px] object-cover  "></img>
                                 </div>
                                 <div className="w-[57px] h-full ml-[59px] bg-[#09724A] flex items-center justify-center">
                                     <h1 className=" text-center text-white rotate-[-90deg]">DISPONIBLES  12 / 346</h1>

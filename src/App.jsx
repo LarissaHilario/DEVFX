@@ -1,14 +1,13 @@
 import React from 'react'
 import './App.css'
-import LandingPage from './pages/LandingPage'
-import CardImage from './components/CardImage'
+import AppRouter from './router/AppRouter'
 
 function App() {
 
   return (
     <>
     <div>
-   <CardImage/>
+      <AppRouter/>
     </div>
     </>
   )

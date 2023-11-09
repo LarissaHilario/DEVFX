@@ -1,25 +1,20 @@
 import React from "react";
+import TopNfts from "../components/TopNfts";
 
 const LandingPage = () => {
     return (
         
-        <div className="fixed top-0 w-full h-full h-screen">
-        <div className="h-full w-full overflow-hidden">
-            {/*   */}
-            <div className="w-full h-full ">
+        <div className=" top-0 w-full h-full h-screen">
+     
                 
-                <div className="w-full h-full relative overflow-hidden">
+                <div className="w-full h-full">
                     {/* background */}
                     <div className="absolute z-10 h-full w-full ">
                         <div className="h-full w-full relative">
                             <div className="absolute z-10 h-full w-full bg-backLanding bg-cover  bg-no-repeat">
                                
                             </div>
-                            <div className="absolute w-full h-full z-20 flex items-end">
-                                <div className="w-full h-[50%]">
-                                    
-                                </div>
-                            </div>
+                           
                         </div>
                     </div>
                     {/* logica */}
@@ -35,10 +30,10 @@ const LandingPage = () => {
                             </div>
                         </div>
                     </div>
+                    
                 </div>
-               
-            </div>
-        </div>
+               <TopNfts/>
+          
     </div>
 );
 };
