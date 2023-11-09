@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+			backgroundImage: {
+				backLanding: "url('./assets/bg.png')",
+				
+			},
+    },
   },
   plugins: [],
 }
-
