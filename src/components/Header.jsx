@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../assets/icon/quetz.png';
 import { BiWallet, BiCartAlt, BiSearch } from 'react-icons/bi';
+import Cart from './Cart';
 
 export default function Header() {
+  const [isCartOpen, setCartOpen] = useState(false);
+
+  const handleCartClick = () => {
+    setCartOpen(!isCartOpen);
+  };
+  
   return (
     <header className="bg-[#292929] p-4 flex justify-between items-center">
       {/* Espacio para el logo con una imagen */}
@@ -35,10 +42,12 @@ export default function Header() {
         <button className="bg-green-800 text-white px-4 py-2 rounded-sm pr-8 pl-8 hover:bg-green-700 transition duration-150 ease-in">
           <BiWallet size={20} />
         </button>
-        <button className="bg-green-800 text-white px-4 py-2 rounded-sm pr-8 pl-8 transition hover:bg-green-700 duration-150 ease-in">
+        <button className="bg-green-800 text-white px-4 py-2 rounded-sm pr-8 pl-8 transition hover:bg-green-700 duration-150 ease-in"
+          onClick={handleCartClick}>
           <BiCartAlt size={20} />
         </button>
       </div>
+      {isCartOpen && <Cart onClose={handleCartClick} />}
     </header>
   );
 } 
