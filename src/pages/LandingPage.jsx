@@ -4,7 +4,7 @@ import TopNfts from "../components/TopNfts";
 const LandingPage = () => {
     return (
         
-        <div className=" top-0 w-full h-full h-screen">
+        <div className=" top-0 w-full h-screen">
      
                 
                 <div className="w-full h-full">
